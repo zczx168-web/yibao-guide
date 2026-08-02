@@ -1,8 +1,3 @@
-const date = new Intl.DateTimeFormat('zh-CN', {
-  year: 'numeric', month: 'long', day: 'numeric', weekday: 'long'
-}).format(new Date());
-document.querySelector('#today').textContent = date;
-
 document.querySelectorAll('[data-copy]').forEach((button) => {
   button.addEventListener('click', async () => {
     const value = button.dataset.copy;
